@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.usf.cutr.siri</groupId>
+  
+  <artifactId>onebusaway-siri-api-v13-pojos</artifactId>
+  <version>1.0.0</version>
+  
+  <name>onebusaway-siri-api-v13-pojos</name>
+  <description>Support for the SIRI v 1.3 api for real-time transit data, in the form of Plain Old Java Objects (POJOSs), primarily created for use on the Android platform. The class files in this project were automatically generated from the SIRI XSD schemas, and then all xml annotations and imports for the java.xml namespace were removed. Android doesn't support XML annotations such as those used in JAXB, and therefore for binding data objects (e.g., binding Siri classes to JSON input) POJOs are required.</description>
+  <url>https://github.com/CUTR-at-USF/onebusaway-siri-api-v13-pojos/wiki</url>
+  
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/CUTR-at-USF/onebusaway-siri-api-v13-pojos/issues</url>
+  </issueManagement>
+  
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+    
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
