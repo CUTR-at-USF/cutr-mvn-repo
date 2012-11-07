@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>edu.usf.cutr.android.xml</groupId>
-  <artifactId>stax-api-android</artifactId>
+  <artifactId>jackson-dataformat-xml-android</artifactId>
   <versioning>
-    <release>1.0-2</release>
     <versions>
-      <version>1.0-2</version>
+      <version>2.1.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20121107164013</lastUpdated>
+    <lastUpdated>20121107164010</lastUpdated>
   </versioning>
 </metadata>
