@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.usf.cutr.opentripplanner.android</groupId>
+  <artifactId>opentripplanner-pojos-unversioned</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <name>opentripplanner-pojos</name>
+  <description>Plain Old Java Objects (POJOs) used for deserializing OpenTripPlanner server responses on Android devices. This project is for legacy OTP servers that don't have a serverInfo() REST API method - http://www.opentripplanner.org/apidoc/el_ns0_serverInfo.html - which is for OTP server tags 0.8.0 and lower. Versions 0.9.0 and higher should use the versioned OTP POJO projects.</description>
+  
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/CUTR-at-USF/opentripplanner-pojos-unversioned/issues</url>
+  </issueManagement>
+  
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  
+  <dependencies>       
+        <!-- Lombok, which auto-generates getter and setter methods via annotations -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>0.11.6</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- Jackson, for JSON parsing -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.1.0</version>
+        </dependency>        
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+</project>
