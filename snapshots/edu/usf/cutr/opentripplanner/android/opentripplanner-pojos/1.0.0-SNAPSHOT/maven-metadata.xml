@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>edu.usf.cutr.opentripplanner.android</groupId>
-  <artifactId>opentripplanner-pojos-unversioned</artifactId>
+  <artifactId>opentripplanner-pojos</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20121115.205333</timestamp>
-      <buildNumber>22</buildNumber>
+      <timestamp>20121115.212559</timestamp>
+      <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20121115205333</lastUpdated>
+    <lastUpdated>20121115212559</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0.0-20121115.205333-22</value>
-        <updated>20121115205333</updated>
+        <value>1.0.0-20121115.212559-1</value>
+        <updated>20121115212559</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0.0-20121115.205333-22</value>
-        <updated>20121115205333</updated>
+        <value>1.0.0-20121115.212559-1</value>
+        <updated>20121115212559</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

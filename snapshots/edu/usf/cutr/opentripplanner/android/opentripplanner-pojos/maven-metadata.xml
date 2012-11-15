@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>edu.usf.cutr.opentripplanner.android</groupId>
-  <artifactId>opentripplanner-pojos-unversioned</artifactId>
+  <artifactId>opentripplanner-pojos</artifactId>
   <versioning>
     <versions>
       <version>1.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20121115205333</lastUpdated>
+    <lastUpdated>20121115212559</lastUpdated>
   </versioning>
 </metadata>
