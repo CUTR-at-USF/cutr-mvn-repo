@@ -1,0 +1,102 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.usf.cutr.opentripplanner.android</groupId>
+  <artifactId>opentripplanner-pojos</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <name>opentripplanner-pojos</name>
+  <description>Plain Old Java Objects (POJOs) used for deserializing OpenTripPlanner server responses on Android devices.</description>
+  
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/CUTR-at-USF/opentripplanner-pojos/issues</url>
+  </issueManagement>
+  
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  
+  <dependencies>       
+        <!-- Lombok, which auto-generates getter and setter methods via annotations -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>0.11.6</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- Jackson, for JSON parsing -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.1.0</version>
+        </dependency>        
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+      </plugin>
+      <!-- Run Ant tasks - commentOutXmlAnnotations -->      
+      <!-- Uncomment this block to run commenOutXmlAnnotations on each "mvn clean" of project 
+      
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <dependencies>
+        	<dependency>
+        		<groupId>ant</groupId>
+        		<artifactId>ant-nodeps</artifactId>
+        		<version>1.6.5</version>
+        	</dependency>
+    	</dependencies>
+        <executions>
+          <execution>
+            <id>commentOutXmlAnnotations</id>
+            <phase>pre-clean</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <property name="compile_classpath" 
+                          refid="maven.compile.classpath"/>
+                <property name="outputDir"
+                          value="${project.build.sourceDirectory}"/>
+                <property name="sourceDir"
+                          value="${project.build.sourceDirectory}"/>
+                <property name="pojos"
+                          value="${basedir}"/>
+                <ant antfile="${basedir}/commentOutXmlAnnotations.xml"
+                     target="commentOutXmlAnnotations"/>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+       -->
+    </plugins>
+  </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+</project>
